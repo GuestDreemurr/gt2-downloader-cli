@@ -1,6 +1,6 @@
 $downloaddir = "GT2-Clients"
 New-Item -ItemType Directory -Path $downloaddir -Force | Out-Null
-Copy-Item -Path "ExtractScript.sh" -Destination $downloaddir -Force
+Copy-Item -Path "ExtractScript.ps1" -Destination $downloaddir -Force
 
 $hash = Read-Host "Enter version hash"
 $baseUrl = "https://setup.gametest2.robloxlabs.com.s3.amazonaws.com"
